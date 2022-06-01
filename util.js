@@ -34,7 +34,7 @@ $( document ).ready(function() {
 });
 function homepageClick(){
 
-  window.location.href = "index.html";
+  window.location.href = "/Side-bar";
 
 }
 
