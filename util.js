@@ -13,6 +13,25 @@ function closeNav() {
     
     
 }
+var side_nav_btn = $("div > a");
+
+$(".dropbtn").on("click", function(){
+    $("#myDropdown").toggleClass("show")
+    if($("#myDropdown").hasClass("show")){
+      $(side_nav_btn).eq(9).css("margin-top", "260px")
+      $(side_nav_btn).eq(12).css("margin-top", "260px")
+      console.log("win")
+    }else{
+      $(side_nav_btn).eq(9).css("margin-top", "0")
+      $(side_nav_btn).eq(12).css("margin-top", "0")
+
+      console.log("false")
+
+    }
+
+  });
+
+
 
 $( document ).ready(function() {
 
@@ -42,7 +61,7 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
   
-  // Close the dropdown if the user clicks outside of it
+  /* Close the dropdown if the user clicks outside of it
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -54,7 +73,7 @@ function myFunction() {
         }
       }
     }
-  }
+  }*/
 /*
 var burger_menu = $(".burger_menu")
 var close_btn = $(".closebtn")
