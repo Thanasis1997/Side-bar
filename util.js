@@ -17,6 +17,9 @@ var side_nav_btn = $("div > a");
 
 $(".dropbtn").on("click", function(){
     $("#myDropdown").toggleClass("show")
+    $("#myDropdown2").removeClass("show")
+    $(side_nav_btn).eq(17).css("margin-top", "0")
+      $(side_nav_btn).eq(15).css("margin-top", "0")
     if($("#myDropdown").hasClass("show")){
       $(side_nav_btn).eq(9).css("margin-top", "260px")
       $(side_nav_btn).eq(12).css("margin-top", "260px")
@@ -24,6 +27,25 @@ $(".dropbtn").on("click", function(){
     }else{
       $(side_nav_btn).eq(9).css("margin-top", "0")
       $(side_nav_btn).eq(12).css("margin-top", "0")
+
+      console.log("false")
+
+    }
+
+  });
+  $(".dropbtn2").on("click", function(){
+    $("#myDropdown2").toggleClass("show")
+    $("#myDropdown").removeClass("show")
+    $(side_nav_btn).eq(9).css("margin-top", "0")
+    $(side_nav_btn).eq(12).css("margin-top", "0")
+
+    if($("#myDropdown2").hasClass("show")){
+      $(side_nav_btn).eq(17).css("margin-top", "260px")
+      $(side_nav_btn).eq(15).css("margin-top", "260px")
+      console.log("win")
+    }else{
+      $(side_nav_btn).eq(17).css("margin-top", "0")
+      $(side_nav_btn).eq(15).css("margin-top", "0")
 
       console.log("false")
 
@@ -43,7 +65,7 @@ $( document ).ready(function() {
         $(this).addClass("active");
         yellow_text_navbar.html($(this).text())
         //closeNav();
-        burger_menu.show()
+        
 
     });
 

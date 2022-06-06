@@ -231,6 +231,13 @@ button{
   position: absolute;
   bottom: 0;
 }
+.user{
+  position: absolute;
+  height: 40px;
+  top: 30%;
+  right: 40px;
+  width: 40px;
+}
 
 
 
@@ -298,10 +305,10 @@ div svg{
 
 .user{
   position: absolute;
-  top: 10%;
+  top: 7%;
   height: 50px;
   width: 50px;
-  left: 210px;
+  right: 25px;
 
 }
 
