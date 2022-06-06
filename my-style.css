@@ -238,6 +238,10 @@ button{
   right: 40px;
   width: 40px;
 }
+.bi-person-circle::before{
+  font-size: 20px;
+}
+
 
 
 
@@ -309,6 +313,7 @@ div svg{
   height: 50px;
   width: 50px;
   right: 25px;
+  
 
 }
 
@@ -346,9 +351,10 @@ button.homepage-btn{
   padding-left: 0;
 }
 
-
-
-
+.bi-person-circle::before{
+  font-size: 20px;
+  
+}
 
 
 }
