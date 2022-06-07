@@ -1,20 +1,23 @@
+ var test = document.querySelector(".burger_menu")
  function openNav() {
     document.getElementById("sideNavigation").style.width = "250px";
     //document.getElementById("main").style.marginLeft = "250px";
-    
-   
-    
-}
+    test.style.setProperty("display", "none", "important")
+    }
 
 function closeNav() {
     document.getElementById("sideNavigation").style.width = "0";
    // document.getElementById("main").style.marginLeft = "0";
-    
-    
-    
-}
-var side_nav_btn = $("div > a");
+   test.style.setProperty("display", "block", "important")
 
+}
+
+var burger_menu = $(".burger_menu")
+
+
+
+var side_nav_btn = $("div > a");
+//first drop-down-menu-item
 $(".dropbtn").on("click", function(){
     $("#myDropdown").toggleClass("show")
     $("#myDropdown2").removeClass("show")
@@ -33,6 +36,8 @@ $(".dropbtn").on("click", function(){
     }
 
   });
+//second drop-down-menu-item
+
   $(".dropbtn2").on("click", function(){
     $("#myDropdown2").toggleClass("show")
     $("#myDropdown").removeClass("show")
@@ -54,7 +59,7 @@ $(".dropbtn").on("click", function(){
   });
 
 
-
+//adds-removes active class from menu-items
 $( document ).ready(function() {
 
     var side_nav_btn = $("div > a");
@@ -73,6 +78,7 @@ $( document ).ready(function() {
 
 
 });
+//arxikh-selida button
 function homepageClick(){
 
   window.location.href = "/Side-bar";
