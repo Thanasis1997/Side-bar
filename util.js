@@ -21,8 +21,9 @@ var burger_menu = $(".burger_menu")
 var side_nav_btn = $("div > a");
 //first drop-down-menu-item
 $(".dropbtn").on("click", function(){
-    $("#myDropdown").toggleClass("show")
     $("#myDropdown2").removeClass("show")
+
+    $("#myDropdown").toggleClass("show")
     $(side_nav_btn).eq(17).css("margin-top", "0")
       $(side_nav_btn).eq(15).css("margin-top", "0")
     if($("#myDropdown").hasClass("show")){
@@ -41,8 +42,9 @@ $(".dropbtn").on("click", function(){
 //second drop-down-menu-item
 
   $(".dropbtn2").on("click", function(){
-    $("#myDropdown2").toggleClass("show")
     $("#myDropdown").removeClass("show")
+
+    $("#myDropdown2").toggleClass("show")
     $(side_nav_btn).eq(9).css("margin-top", "0")
     $(side_nav_btn).eq(12).css("margin-top", "0")
 

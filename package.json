@@ -1,0 +1,22 @@
+{
+  "name": "side-menu-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "util.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "webdriver-update": "webdriver-manager update"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thanasis1997/Side-bar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thanasis1997/Side-bar/issues"
+  },
+  "homepage": "https://github.com/Thanasis1997/Side-bar#readme"
+}
